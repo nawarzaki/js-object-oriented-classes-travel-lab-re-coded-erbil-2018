@@ -31,16 +31,17 @@ class Route {
     this.endingLocation = endingLocation
         }
 
-      avenueToInteger( eastWest ) {
-    return eastWest.indexOf( eastWest );
-  }
-
-   blocksTravelled() {
-          let x = Math.abs(avenueToInteger(this.endingLocation.horizontal) - this.avenueToInteger(this.endingLocation.horizontal))
-          let y = Math.abs(this.beginningLocation.horizontal - this.endingLocation.horizontal)
-          let z = x + y
-          return z
-  }
+        avenueToInteger( avenue ) {
+      return eastWest.indexOf( avenue );
+    }
+    blocksTravelled() {
+      let horizontalDistance =
+        this.avenueToInteger( this.endingLocation.horizontal ) -
+        this.avenueToInteger( this.beginningLocation.horizontal );
+      let verticalDistance =
+        this.endingLocation.vertical - this.beginningLocation.vertical;
+      return Math.abs( horizontalDistance ) + Math.abs( verticalDistance );
+    }
 
 
 

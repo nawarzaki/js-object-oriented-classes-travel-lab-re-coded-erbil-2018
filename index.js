@@ -9,6 +9,8 @@ let eastWest = [
 ];
 
 
+
+
 class Driver {
   constructor(name, startDate) {
     this.name = name
@@ -28,6 +30,10 @@ class Route {
     this.beginningLocation = beginningLocation
     this.endingLocation = endingLocation
         }
+
+      avenueToInteger( avenue ) {
+    return eastWest.indexOf( avenue );
+  }
 
    blocksTravelled() {
           let x = Math.abs(`${this.beginningLocation.vertical} - ${this.endingLocation.vertical}`)

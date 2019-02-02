@@ -30,8 +30,8 @@ class Route {
         }
 
    blocksTravelled() {
-          let x = Math.abs(`${this.beginningLocation.vertical} - ${this.endingLocation.vertical}`)
-          let y = Math.abs(`${this.beginningLocation.horizontal} - ${this.endingLocation.horizontal}`)
+          let x = Math.abs(`${'this.beginningLocation.vertical'} - ${'this.endingLocation.vertical'}`)
+          let y = Math.abs(`${'this.beginningLocation.horizontal'} - ${'this.endingLocation.horizontal'}`)
           let z = x + y
           return z
   }

@@ -31,12 +31,12 @@ class Route {
     this.endingLocation = endingLocation
         }
 
-        avenueToInteger( avenue ) {
+  avenueToInteger( avenue ) {
           return eastWest.indexOf( avenue );
         }
 
    blocksTravelled() {
-          let x = avenueToInteger(this.endingLocation.horizontal) - this.avenueToInteger(this.endingLocation.horizontal)
+          let x = this.avenueToInteger(this.endingLocation.horizontal) - this.avenueToInteger(this.endingLocation.horizontal)
           let y = this.beginningLocation.horizontal - this.beginningLocation.horizontal
           let z = x + y
           return z

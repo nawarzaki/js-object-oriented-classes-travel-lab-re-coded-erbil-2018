@@ -1,1 +1,27 @@
+class Driver {
+  constructor(name, startDate) {
+    this.name = name
+    startDate =  new Date()
+        this.startDate = startDate
+  }
+  yearsExperienceFromBeginningOf(year){
+    let startDate =  new Date(1995)
+    let endDate =  new Date(year)
+    let x = endDate - startDate
+ return x
+  }
+}
 
+class Route {
+  constructor(beginningLocation, endingLocation) {
+    this.beginningLocation = beginningLocation
+    this.endingLocation = endingLocation
+        }
+
+   blocksTravelled() {
+          return Math.abs(`${this.beginningLocation.vertical} - ${this.endingLocation.vertical}`)
+
+  }
+
+
+  }

@@ -44,6 +44,14 @@ class Route {
          return Math.abs( x ) + Math.abs( y );
        }
 
+       estimatedTime( peak ) {
+    if ( peak ) {
+      return this.blocksTravelled() / 2;
+    } else {
+      return this.blocksTravelled() / 3;
+    }
+  }
+
 
 
   }

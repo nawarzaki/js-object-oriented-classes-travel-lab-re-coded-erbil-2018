@@ -39,7 +39,7 @@ class Route {
           let x = this.avenueToInteger(this.endingLocation.horizontal) - this.avenueToInteger(this.beginningLocation.horizontal)
           let y = this.endingLocation.horizontal - this.beginningLocation.horizontal
             return  Math.abs(x) +  Math.abs(y)
-      
+
   }
 
 

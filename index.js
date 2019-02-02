@@ -41,7 +41,3 @@ class Route {
             return  Math.abs(x) +  Math.abs(y)
 
   }
-
-
-
-  

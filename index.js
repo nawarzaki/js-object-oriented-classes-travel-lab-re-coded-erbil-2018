@@ -38,7 +38,7 @@ class Route {
    blocksTravelled() {
           let x = this.avenueToInteger(this.endingLocation.horizontal) - this.avenueToInteger(this.endingLocation.horizontal)
           let y = this.beginningLocation.horizontal - this.endingLocation.horizontal
-          let z = x + y
+          let z = Math.abs(x) +  Math.abs(y)
           return z
   }
 
